@@ -5,6 +5,8 @@ public class ContaTerminal {
         Scanner scn = new Scanner(System.in).useLocale(java.util.Locale.US);
         
         System.out.println("Bem vindo ao banco do Bootcamp Java 2023");
+        
+        // Obtendo dados do cliente
         System.out.print("Digite o nome do titular: ");
         String nomeCliente = scn.nextLine();
 
@@ -14,19 +16,12 @@ public class ContaTerminal {
         System.out.print("Digite o número da sua conta bancária: ");
         int numeroConta = scn.nextInt();
         
-
         System.out.print("Digite o saldo inicial da sua conta bancária: ");
         double saldoConta = scn.nextDouble();
-        
 
-        System.out.print("\nOlá, " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agenciaConta);
+        // Mensagem de sucesso para o cliente
+        System.out.println("Olá, " + nomeCliente + ", obrigado por criar uma conta em nosso banco, sua agência é " + agenciaConta);
         System.out.print(", conta " + numeroConta  + " e seu saldo " + saldoConta + " já está disponível para saque.");
 
-
-        //TODO: Exibir as mensagens para o nosso usuario
-
-        //TODO: Obter pelo scanner os valores digitados no terminal
-
-        //TODO Exibir a mensagem conta criada
     }
 }
