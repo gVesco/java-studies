@@ -13,7 +13,6 @@ public class SimulacaoBancaria {
 
             switch (opcao) {
                 case 1:
-                    // TODO: Ler o valor a ser depositado e atualizar/imprimir o saldo.
                     saldo += scanner.nextInt();
                     System.out.printf("Saldo atual: %.1f \n", saldo);
                     break;
@@ -26,11 +25,9 @@ public class SimulacaoBancaria {
                     } else {
                       System.out.println("Saldo insuficiente.");
                     }
-                    // TODO: Ler o valor a ser sacado e verificar/imprimir se há saldo suficiente.
                     break;
                 case 3:
                     System.out.printf("Saldo atual: %.1f \n", saldo);
-                    // TODO: Exibir o saldo atual da conta.
                     break;
                 case 0:
                     System.out.println("Programa encerrado.");
